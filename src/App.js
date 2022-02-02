@@ -18,7 +18,7 @@ function App() {
       description: 'Fields, farmhouses, waterfalls, and the beauty of nature',
     },
   ]);
-  
+
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   return (
@@ -29,7 +29,7 @@ function App() {
         currentCategory={currentCategory}
       ></Nav>
       <main>
-        <Gallery></Gallery>
+        <Gallery currentCategory={currentCategory}></Gallery>
         <About></About>
       </main>
     </div>
